@@ -13,14 +13,14 @@ Load a synonyms object from the factory. Accepts either a string with the
 synonym file contents (see below), a file pointer, or a list of lists that
 contain the synonyms.
 
-  >>> from synonyms import load
-  >>> s = load(open('syn.txt'))
-  >>> s.match('United States')
-  'usa'
-  >>> s.match('United States', all=True)
-  ['USA', 'United States', 'us', 'the states']
-  >>> 'usa' in s:
-  True
+    >>> from synonyms import load
+    >>> s = load(open('syn.txt'))
+    >>> s.match('United States')
+    'usa'
+    >>> s.match('United States', all=True)
+    ['USA', 'United States', 'us', 'the states']
+    >>> 'usa' in s:
+    True
 
 # Format
 
@@ -33,6 +33,6 @@ synonym.
 
 Example:
 
-  # This is a comment
-  USA, United States, us, the states
-  foo, bar, baz
+    # This is a comment
+    USA, United States, us, the states
+    foo, bar, baz
