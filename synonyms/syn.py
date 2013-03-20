@@ -39,7 +39,7 @@ class Synonyms:
         s = s.split("\n")
         for line in s:
             # Skip comment lines
-            if line.strip().startswith('#'):
+            if line.strip().startswith('#') or line.strip() == '':
                 continue
             l = line.split(',')
             self._load_list(l, ignoreCase)
